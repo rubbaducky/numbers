@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="Sumput_Beta.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sumput_Beta"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" RequestedTheme="Dark">
+
+    <Grid RequestedTheme="Dark">
+        <TextBox x:Name="display" HorizontalAlignment="Left" Height="58" Margin="26,88,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="319" FontSize="36" IsReadOnly="True" IsEnabled="False" Opacity="5" RequestedTheme="Dark"/>
+        <Button x:Name="button" Content="7" HorizontalAlignment="Left" Height="64" Margin="9,455,0,0" VerticalAlignment="Top" Width="64" Click="button_Click" FontSize="36"/>
+        <Button x:Name="eight" Content="8" HorizontalAlignment="Left" Height="64" Margin="85,455,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="eight_Click"/>
+        <Button x:Name="nine" Content="9" HorizontalAlignment="Left" Height="64" Margin="160,455,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="nine_Click"/>
+        <Button x:Name="four" Content="4" HorizontalAlignment="Left" Height="66" Margin="9,530,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="four_Click"/>
+        <Button x:Name="five" Content="5" HorizontalAlignment="Left" Height="66" Margin="85,530,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="five_Click"/>
+        <Button x:Name="six" Content="6" HorizontalAlignment="Left" Height="66" Margin="160,530,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="six_Click"/>
+        <Button x:Name="one" Content="1" HorizontalAlignment="Left" Height="64" Margin="9,606,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="one_Click"/>
+        <Button x:Name="two" Content="2" HorizontalAlignment="Left" Height="64" Margin="85,606,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="two_Click"/>
+        <Button x:Name="three" Content="3" HorizontalAlignment="Left" Height="64" Margin="160,606,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="three_Click"/>
+        <Button x:Name="zero" Content="0" HorizontalAlignment="Left" Height="63" Margin="9,685,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="zero_Click"/>
+        <Button x:Name="point" Content="." HorizontalAlignment="Left" Height="63" Margin="85,685,0,0" VerticalAlignment="Top" Width="63" FontSize="36" Click="point_Click"/>
+        <Button x:Name="enter" Content="=" HorizontalAlignment="Left" Height="63" Margin="160,685,0,0" VerticalAlignment="Top" Width="140" FontSize="36" Click="enter_Click"/>
+        <Button x:Name="division" Content="÷" HorizontalAlignment="Left" Height="64" Margin="236,380,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="division_Click"/>
+        <Button x:Name="multiplication" Content="×" HorizontalAlignment="Left" Height="64" Margin="236,456,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="multiplication_Click"/>
+        <Button x:Name="subtraction" Content="-" HorizontalAlignment="Left" Height="65" Margin="236,531,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="subtraction_Click"/>
+        <Button x:Name="addition" Content="+" HorizontalAlignment="Left" Height="64" Margin="236,606,0,0" VerticalAlignment="Top" Width="64" FontSize="36" Click="addition_Click"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Height="64" Margin="11,380,0,0" VerticalAlignment="Top" Width="138" FontSize="36" Click="clear_Click" RequestedTheme="Dark"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="40" Margin="40,18,0,0" TextWrapping="Wrap" Text="SumPut" VerticalAlignment="Top" Width="96" FontSize="18" FontFamily="Segoe Script"/>
+        <TextBlock HorizontalAlignment="Left" Height="46" Margin="273,12,0,0" TextWrapping="Wrap" Text="+" VerticalAlignment="Top" Width="43" FontSize="24" FontFamily="Times New Roman"/>
+        <TextBlock HorizontalAlignment="Left" Height="43" Margin="283,25,0,0" TextWrapping="Wrap" Text="Put" VerticalAlignment="Top" Width="66" FontSize="18" FontFamily="Times New Roman"/>
+        <Button Content="-/+" HorizontalAlignment="Left" Margin="160,380,0,0" VerticalAlignment="Top" Width="64" Height="64" FontSize="24" Click="Button_Click_1"/>
+        <Button x:Name="openbrack" Content="(" HorizontalAlignment="Left" Margin="312,380,0,0" VerticalAlignment="Top" FontSize="16" Width="65" Height="53" Click="openbrack_Click" RequestedTheme="Dark" BorderThickness="2,2,2,2"/>
+        <Button x:Name="closebrack" Content=")" HorizontalAlignment="Left" Margin="312,441,0,0" VerticalAlignment="Top" FontSize="18" Width="65" Height="54" Click="closebrack_Click"/>
+        <Button x:Name="square" Content="x² " HorizontalAlignment="Left" Margin="312,505,0,0" VerticalAlignment="Top" Width="65" Height="56" Click="square_Click" FontSize="18"/>
+        <Button x:Name="root" Content=" √x" HorizontalAlignment="Left" Margin="312,633,0,0" VerticalAlignment="Top" FontSize="18" Width="65" Height="53" Click="root_Click"/>
+        <Button x:Name="exponent" HorizontalAlignment="Left" Margin="312,570,0,0" VerticalAlignment="Top" Width="65" Height="55" FontSize="18" Content="xʸ" Click="exponent_Click"/>
+        <Button x:Name="rt" Content="ʸ √x" HorizontalAlignment="Left" Margin="312,694,0,0" VerticalAlignment="Top" FontSize="18" Width="65" Height="54" Click="rt_Click"/>
+        <Button x:Name="asin" Content="Asin" HorizontalAlignment="Left" Margin="11,318,0,0" VerticalAlignment="Top" Width="84" Click="asin_Click" Height="41"/>
+        <Button x:Name="sin" Content="sin" HorizontalAlignment="Left" Margin="11,271,0,0" VerticalAlignment="Top" Width="84" Click="sin_Click" Height="41"/>
+        <Button x:Name="acos" Content="Acos" HorizontalAlignment="Left" Margin="102,318,0,0" VerticalAlignment="Top" Width="82" Click="acos_Click" Height="41"/>
+        <Button x:Name="cos" Content="cos" HorizontalAlignment="Left" Margin="102,271,0,0" VerticalAlignment="Top" Width="82" Click="cos_Click" Height="41"/>
+        <Button x:Name="atan" Content="Atan" HorizontalAlignment="Left" Margin="190,318,0,0" VerticalAlignment="Top" Width="83" Click="atan_Click" Height="41"/>
+        <Button x:Name="tan" Content="tan" HorizontalAlignment="Left" Margin="190,271,0,0" VerticalAlignment="Top" Width="83" Click="tan_Click" Height="41"/>
+        <Button x:Name="rad" Content="Deg/Rad" HorizontalAlignment="Left" Margin="13,218,0,0" VerticalAlignment="Top" Width="110" Height="41" Click="rad_Click"/>
+        <Button x:Name="log" Content="Log" HorizontalAlignment="Left" Margin="287,271,0,0" VerticalAlignment="Top" Width="90" Height="41" Click="log_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="211,160,0,0" TextWrapping="Wrap" Text="Mode:" VerticalAlignment="Top" Height="32" Width="74" FontSize="18"/>
+        <TextBox x:Name="rde" HorizontalAlignment="Left" Margin="270,155,0,0" TextWrapping="Wrap" Text="Deg" VerticalAlignment="Top" FontSize="14" Height="20" IsReadOnly="True" IsEnabled="False" RequestedTheme="Dark"/>
+        <TextBox x:Name="brak" HorizontalAlignment="Left" Margin="95,156,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="59" Height="24" FontSize="16" IsReadOnly="False" IsEnabled="False"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="20,160,0,0" TextWrapping="Wrap" Text="Brackets:" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="120,12,0,0" TextWrapping="Wrap" Text=" ß" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="display2" HorizontalAlignment="Left" Height="30" Margin="26,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="319" TextAlignment="Right" IsReadOnly="True" AcceptsReturn="False"/>
+        <Button x:Name="back" Content="←" HorizontalAlignment="Left" Margin="266,217,0,0" VerticalAlignment="Top" Width="110" FontSize="24" Height="41" Click="back_Click"/>
+        <Button x:Name="logx" Content="Logₓ" HorizontalAlignment="Left" Margin="287,318,0,0" VerticalAlignment="Top" Width="90" Height="41" Click="logx_Click"/>
+        <Button x:Name="pi" Content="π" HorizontalAlignment="Left" Margin="131,218,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="41" Width="110" FontSize="20" Click="pi_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0"/>
+            </Button.RenderTransform>
+        </Button>
+        <Image x:Name="todo" HorizontalAlignment="Left" Height="92" Margin="27,53,0,0" VerticalAlignment="Top" Width="92" Source="/Assets/StoreLogo.png" Visibility="Collapsed"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="185,869,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Page>
